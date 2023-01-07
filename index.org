@@ -16,8 +16,10 @@ Date: 6 Jan 2023
 
 Desc: This one was created in a couple of hours using some old trim scrap peices from the garage. They were sanded down, cut to size and then dowelled together (rather than a miter join). The fabric was then installed and tensioned using a nail gun.
 
-* TODO Workbench
+* Workbench
 Date: 3 Jan 2023
+
+Desc: The worktop is created from an MDF panel with 20mm holes at 100CTS to suit bench dogs or clamps. It is also hollow under to allow easy clamping from most locations. The legs came from an old sleeper that was planed down; timber type unknown but has a reddish tint. The beams were planed down from some old 90x45 pine lengths. Legs and beams were joined using dowels and finished with clear polyurethane.
 
 * Entryway bench
 Date: 23 Dec 2022
