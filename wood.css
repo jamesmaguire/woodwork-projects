@@ -2,13 +2,14 @@
 
 /* Vars */
 :root {
-  --accent: black;
-  --codebg: #eee;
-  --pagebg: #626262;
+  --headtext: #222;
+  --maintext: #555;
+  --pagebg: linear-gradient(45deg, #eee, #ddd);
   --cardbg: #f5f5f5;
-  --fg: #333;
-  --hl: #0000aa0a;
-  --cardsize: min(60vw, 60vh);
+  --cardwidth: min(45rem, 80vw);
+  --imgsize: min(45rem, 80vw);
+  --overlap: min(15rem, 40vw);
+  --borderrad: 5px;
 }
 
 /* Default settings */
@@ -24,13 +25,11 @@ html {
   font-size: 10pt;    
   line-height: 1.7;
   height: 100vh;
-  background: linear-gradient(45deg, #fbda61, #ff5acd);
-  background: linear-gradient(45deg, #eee, #ddd);
+  background: var(--pagebg);
   background-attachment: fixed;
 }
 body {
   display: flex;
-/*   background: linear-gradient(45deg, #fbda61, #ff5acd); */
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -42,55 +41,61 @@ h1 {
 
 .outline-2 {
   position: relative;
-  width: min(40rem, 90vw);
-  background: #fff;
-  border-radius: 20px;
+  width: var(--cardwidth);
+  background: var(--cardbg);
+  border-radius: var(--borderrad);
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
-  margin: 25vh 0;
+  margin: 10vh 0;
 }
 
 img {
   position: absolute;
   left: 50%;
-  top: -10vh;
   transform: translate(-50%);
-  width: min(15rem, 45vw);
-  height: min(15rem, 45vw);
-  background: #000;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  width: var(--imgsize);
+  height: var(--imgsize);
+  border-radius: var(--borderrad);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
+}
+img:hover {
+  width: calc(1.02*var(--imgsize));
+  height: calc(1.02*var(--imgsize));
+  transform: translate(-50%, calc(-0.02*var(--imgsize)));
 }
 
 .descwrapper {  
   width: 100%;
   height: 100%;
-  padding: min(12rem, 45vw) 40px 40px 40px;
-  overflow: hidden;
-    
+  padding: calc(var(--imgsize) + 2rem) 3rem 3rem 3rem;    
   font-weight: bold;
-  color: #555;
+  color: var(--maintext);
+  overflow: hidden;
 }
 h2 {
+  color: var(--headtext);
   font-size: 1.25rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 .projdate {
+  color: var(--maintext);
   font-size: 0.9rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
-  margin: 1rem 0;
+  margin: 0.4rem 0;
 }
 .projdesc {  
   font-weight: normal;
   line-height: 1.3;
   text-align: justify;
-  overflow: hidden;
-  transition: 0.5s;
-/*   visibility: hidden; */
 }
-.outline-2:hover .projdesc {
-  visibility: visible;
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+a:hover {
+  text-decoration: underline;
 }
