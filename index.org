@@ -1,0 +1,14 @@
+#+title: Woodworking projects
+#+startup: overview
+#+setupfile: wood.setup
+
+* Balance board - 6 Jan 2023
+[[file:./pics/balanceboard.jpg]]
+* Art print frame - 6 Jan 2023
+[[file:./pics/artframe.jpg]]
+* Workbench - 3 Jan 2023
+* Entryway bench - 23 Dec 2022
+[[file:./pics/entrybench.jpg]]
+* Plant ladder - 18 Dec 2022
+* Builtin workbench - 11 Dec 2022
+* TODO Timber favicon
