@@ -99,3 +99,34 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Table of contents */
+#table-of-contents {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem 5vw;
+}
+@media (max-width: 60rem) {
+  #table-of-contents { display: none; }
+}
+#table-of-contents h2 { display: none; }
+#table-of-contents ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15rem;
+}
+#table-of-contents ul li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+#table-of-contents ul li a {
+  color: #bbb;
+  font-weight: bold;
+}
+#table-of-contents ul li.active a {
+  color: var(--maintext);
+}

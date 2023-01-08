@@ -31,3 +31,29 @@ for (let i=0; i<outline2s.length; i++) {
     projdate ? wrapper.appendChild(projdate) : null;
     projdesc ? wrapper.appendChild(projdesc) : null;
 }
+
+// Table of contents
+// Give all h2s an id of "Balance board => Balance-board"
+[...document.getElementsByClassName('descwrapper')]
+    .map(w => w.getElementsByTagName('h2')[0])
+    .map(h => h.id = h.innerText.replace(/ /g, '-'));
+// Same for toc entries
+[...document.getElementById('text-table-of-contents').getElementsByTagName('ul')[0].children]
+    .map(l => l.getElementsByTagName('a')[0].href = `#${l.innerText.replace(/ /g, '-')}`);
+
+window.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`#text-table-of-contents ul li a[href="#${id}"]`).parentElement.classList.add('active');
+      } else {
+        document.querySelector(`#text-table-of-contents ul li a[href="#${id}"]`).parentElement.classList.remove('active');
+      }
+    });
+  });
+  // Track all h2s that have an `id` applied
+  document.querySelectorAll('h2[id]').forEach((section) => {
+    observer.observe(section);
+  });
+});
