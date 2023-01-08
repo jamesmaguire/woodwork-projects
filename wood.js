@@ -33,14 +33,6 @@ for (let i=0; i<outline2s.length; i++) {
 }
 
 // Table of contents
-// Give all h2s an id of "Balance board => Balance-board"
-[...document.getElementsByClassName('descwrapper')]
-    .map(w => w.getElementsByTagName('h2')[0])
-    .map(h => h.id = h.innerText.replace(/ /g, '-'));
-// Same for toc entries
-[...document.getElementById('text-table-of-contents').getElementsByTagName('ul')[0].children]
-    .map(l => l.getElementsByTagName('a')[0].href = `#${l.innerText.replace(/ /g, '-')}`);
-
 window.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
