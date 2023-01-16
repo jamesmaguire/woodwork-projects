@@ -9,7 +9,7 @@
   --cardwidth: min(45rem, 80vw);
   --imgsize: min(45rem, 80vw);
   --overlap: min(15rem, 40vw);
-  --borderrad: 5px;
+  --borderrad: 10px;
 }
 
 /* Default settings */
@@ -44,7 +44,7 @@ h1 {
   width: var(--cardwidth);
   background: var(--cardbg);
   border-radius: var(--borderrad);
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
   margin: 10vh 0;
 }
@@ -55,8 +55,8 @@ img {
   transform: translate(-50%);
   width: var(--imgsize);
   height: var(--imgsize);
-  border-radius: var(--borderrad);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: var(--borderrad) var(--borderrad) 0 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: 0.5s;
 }
 img:hover {
@@ -69,22 +69,23 @@ img:hover {
   width: 100%;
   height: 100%;
   padding: calc(var(--imgsize) + 2rem) 3rem 3rem 3rem;    
-  font-weight: bold;
   color: var(--maintext);
   overflow: hidden;
 }
 h2 {
   color: var(--headtext);
-  font-size: 1.25rem;
-  text-align: left;
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: normal;
   width: 100%;
 }
 .projdate {
-  color: var(--maintext);
-  font-size: 0.9rem;
-  text-align: left;
+  color: var(--headtext);
+  font-size: 1rem;
+  text-align: center;
   width: 100%;
   margin: 0.4rem 0;
+  margin-bottom: 0.5rem;
 }
 .projdesc {  
   font-weight: normal;
