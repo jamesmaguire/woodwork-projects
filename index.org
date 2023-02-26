@@ -2,6 +2,13 @@
 #+startup: overview
 #+setupfile: wood.setup
 
+* Side table
+Date: 26 Feb 2023
+
+https://live.staticflickr.com/65535/52711573064_f9d01631e9_k.jpg
+
+Desc: A side table for the corner of our room to hold charging cables. The timber was Okoume glulam panel finished with clear polyurethane. The draw was made from some scrap MDF with a plywood base and painted with Porter's Highland paint. Draw was tough to get in because of the little tolerance, but used some spacers to get the alignment correct.
+
 * Balance board
 Date: 6 Jan 2023
 
