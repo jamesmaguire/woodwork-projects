@@ -2,6 +2,20 @@
 #+startup: overview
 #+setupfile: wood.setup
 
+* Pikler triangle
+Date: 24 Dec 2024
+
+https://live.staticflickr.com/65535/54227936817_92e9cabade_k.jpg
+
+Desc: A climbing frame for Ayla made from Tasmanian Oak planks and Eucy dowel and finished with food grade parafin oil (mineral oil). Two areas for improvement: the forsner bit splintered the planks on the bottom side which would be solved by either using a scrap under or only drilling partially through so that dowels are recessed; and better glue cleanup since there are glue stains visible after finishing.
+
+* High chair footrest
+Date: 23 Nov 2024
+
+https://live.staticflickr.com/65535/54227938772_0633a7a5dc_k.jpg
+
+Desc: Footrest made for Kmart/Ikea high chair. Simple construction using an offcut of pine, cutting the side grooves with the router and finishing with parafin oil (mineral oil). It's held in place by 4 o-rings.
+
 * Side table
 Date: 26 Feb 2023
 
